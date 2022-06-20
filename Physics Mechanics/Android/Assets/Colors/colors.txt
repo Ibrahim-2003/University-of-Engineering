@@ -1,0 +1,4 @@
+light_blue_ice: dff6ff
+primary_blue: 1363df
+dark_navy_blue: 06283d
+frost_blue: 47b5ff
