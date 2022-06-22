@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- DARK THEME -->
+<!--        <color name="card_color">#dff6ff</color>-->
+<!--        <color name="primary_color">#1363df</color>-->
+        <color name="card_color">#E84F34</color>
+        <color name="primary_color">#1D1D1D</color>
+        <color name="text_color">#1D1D1D</color>
+        <color name="secondary_color">#47b5ff</color>
+
+    <color name="light_blue_ice">#dff6ff</color>
+    <color name="primary_blue">#1363df</color>
+    <color name="dark_navy">#06283d</color>
+    <color name="secondary_blue">#47b5ff</color>
+
+
+</resources>

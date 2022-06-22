@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".about_page"
+    android:background="@color/primary_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ABOUT US"
+        android:textAlignment="center"
+        android:fontFamily="@font/cairo_bold"
+        android:textSize="50sp"
+        android:layout_marginTop="90dp"
+        android:textColor="@color/card_color">
+
+    </TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:text="@string/company"
+                android:fontFamily="@font/din"
+                android:textSize="24sp"
+                android:textAlignment="textStart"
+                android:layout_marginHorizontal="30dp"
+                android:textColor="@color/card_color">
+
+            </TextView>
+
+            <TextView
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:text="@string/location"
+                android:fontFamily="@font/din"
+                android:textSize="24sp"
+                android:textAlignment="textStart"
+                android:layout_marginHorizontal="30dp"
+                android:textColor="@color/card_color">
+
+            </TextView>
+
+            <TextView
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:text="@string/developer"
+                android:fontFamily="@font/din"
+                android:textSize="24sp"
+                android:textAlignment="textStart"
+                android:layout_marginHorizontal="30dp"
+                android:textColor="@color/card_color">
+
+            </TextView>
+
+            <TextView
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:text="@string/phone"
+                android:fontFamily="@font/din"
+                android:textSize="24sp"
+                android:textAlignment="textStart"
+                android:layout_marginHorizontal="30dp"
+                android:textColor="@color/card_color">
+
+            </TextView>
+
+            <TextView
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical"
+                android:text="@string/email"
+                android:fontFamily="@font/din"
+                android:textSize="24sp"
+                android:textAlignment="textStart"
+                android:layout_marginHorizontal="30dp"
+                android:textColor="@color/card_color">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="100dp"
+            android:layout_gravity="start"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:tint="@color/card_color">
+
+        </ImageView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

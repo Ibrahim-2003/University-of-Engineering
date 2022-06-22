@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_color"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/home_title_block"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/settings"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_baseline_settings_24"
+                app:tint="@color/card_color"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/alien_mine"
+                    android:text="@string/ue_abbreviation"
+                    android:textAlignment="center"
+                    android:textColor="@color/card_color"
+                    android:textSize="80sp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/cairo_bold"
+                    android:text="@string/calculator_name"
+                    android:textAlignment="center"
+                    android:textColor="@color/card_color"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/theme_changer"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_baseline_brightness_medium_24"
+                app:tint="@color/card_color"/>
+
+        </LinearLayout>
+
+
+        <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="2800dp"
+                android:columnCount="2"
+                android:rowCount="3"
+            android:layout_marginTop="30dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/units"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/card_color">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/cairo_bold"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="UNITS &amp; MEASUREMENTS"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"></TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/oneDMotion"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/card_color">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/cairo_bold"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="1-D MOTION"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"></TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/vectors"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/card_color">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/cairo_bold"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="VECTORS"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"></TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/twoDMotion"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/card_color">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/cairo_bold"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="2-D MOTION"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"></TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/uniform_circular_motion"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/card_color">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/cairo_bold"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="UNIFORM CIRCULAR MOTION"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"></TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/laws_of_motion"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/card_color">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/cairo_bold"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="LAWS OF MOTION"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"></TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/circular_motion"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/card_color">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/cairo_bold"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="CIRCULAR MOTION"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"></TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/resistive_forces"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/card_color">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/cairo_bold"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="RESISTIVE FORCES"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"></TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/work"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/card_color">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/cairo_bold"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="WORK"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"></TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/kinetic_energy"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/card_color">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/cairo_bold"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="KINETIC ENERGY"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"></TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/friction"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/card_color">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/cairo_bold"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="FRICTION"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"></TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/power"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/card_color">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/cairo_bold"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="POWER"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"></TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/potential_energy"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/card_color">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/cairo_bold"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="POTENTIAL ENERGY"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"></TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/conservation_of_energy"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/card_color">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/cairo_bold"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="CONSERVATION OF ENERGY"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"></TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/linear_momentum"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/card_color">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/cairo_bold"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="LINEAR MOMENTUM"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"></TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/impulse"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/card_color">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/cairo_bold"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="IMPULSE"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"></TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/oneDCollisions"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/card_color">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/cairo_bold"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="1-D COLLISIONS"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"></TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/twoDCollisions"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/card_color">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/cairo_bold"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="2-D COLLISIONS"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"></TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/rocket_propulsion"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/card_color">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/cairo_bold"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="ROCKET\nPROPULSION"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"></TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/rotational_motion"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/card_color">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/cairo_bold"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="ROTATIONAL MOTION"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"></TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/rotational_energy"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/card_color">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/cairo_bold"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="ROTATIONAL ENERGY"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"></TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/moment_of_inertia"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/card_color">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/cairo_bold"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="MOMENT OF INERTIA"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"></TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/torque"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/card_color">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/cairo_bold"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="TORQUE"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"></TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/angular_momentum"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/card_color">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/cairo_bold"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="ANGULAR\nMOMENTUM"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"></TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/center_of_mass"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/card_color">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/cairo_bold"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="CENTER OF MASS"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"></TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/elasticity"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/card_color">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/cairo_bold"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="ELASTICITY"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"></TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/gravitation"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_rowWeight="1"
+                android:layout_column="0"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/card_color">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/cairo_bold"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="UNIVERSAL LAW OF GRAVITATION"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"></TextView>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/oscillatory_motion"
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:layout_rowWeight="1"
+                android:layout_column="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:padding="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="@color/card_color">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/cairo_bold"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="OSCILLATORY\nMOTION"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp"></TextView>
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+
+
+
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

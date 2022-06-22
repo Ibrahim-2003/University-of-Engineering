@@ -1,0 +1,131 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Mechanics Calculator</string>
+    <string name="company">Company: University of Engineering</string>
+    <string name="developer">Developer: 44 Gear Technologies</string>
+    <string name="location">Location: 6100 Main St., Houston, TX 77005, USA</string>
+    <string name="phone">Phone: (832) 786–9132</string>
+    <string name="email" tools:ignore="Typos">Email: isa1@rice.edu</string>
+    <string name="ue_abbreviation">UE</string>
+    <string name="calculator_name">MECHANICS</string>
+
+    <string name="settings_title">SETTINGS</string>
+    <string name="about_title">ABOUT</string>
+    <string name="rate_us_title">RATE US</string>
+    <string name="premium_title">PREMIUM</string>
+    <string name="other_apps_title">OTHER APPS</string>
+    <string name="contact_title">CONTACT</string>
+    <string name="share_title">SHARE</string>
+    <string name="unit_calc_title">UNITS &amp; MEASUREMENTS</string>
+
+    <string name="unit_length">Length</string>
+    <string name="unit_mass">Mass</string>
+    <string name="unit_time">Time</string>
+    <string name="unit_speed">Speed</string>
+    <string name="unit_energy">Energy</string>
+    <string name="unit_force">Force</string>
+    <string name="unit_pressure">Pressure</string>
+    <string name="unit_area">Area</string>
+    <string name="unit_volume">Volume</string>
+    <string name="convert_units_btn">CONVERT</string>
+
+    <string-array name="unit_types">
+        <item>Length</item>
+        <item>Mass</item>
+        <item>Time</item>
+        <item>Speed</item>
+        <item>Energy, Work, and Heat</item>
+        <item>Force</item>
+        <item>Pressure</item>
+        <item>Area</item>
+        <item>Volume</item>
+    </string-array>
+
+    <string-array name="length_units">
+        <item>mm</item>
+        <item>cm</item>
+        <item>m</item>
+        <item>km</item>
+        <item>in</item>
+        <item>ft</item>
+        <item>yd</item>
+        <item>mi</item>
+        <item>NM</item>
+    </string-array>
+
+    <string-array name="mass_units">
+        <item>g</item>
+        <item>kg</item>
+        <item>slug</item>
+        <item>amu</item>
+    </string-array>
+
+    <string-array name="time_units">
+        <item>sec</item>
+        <item>min</item>
+        <item>hr</item>
+        <item>day</item>
+        <item>yr</item>
+    </string-array>
+
+    <string-array name="speed_units">
+        <item>cm/s</item>
+        <item>m/s</item>
+        <item>km/h</item>
+        <item>mph</item>
+        <item>ft/s</item>
+        <item>yd/s</item>
+    </string-array>
+
+    <string-array name="energy_units">
+        <item>J</item>
+        <item>ft-lb</item>
+        <item>eV</item>
+        <item>cal</item>
+        <item>Btu</item>
+        <item>kWh</item>
+    </string-array>
+
+    <string-array name="force_units">
+        <item>N</item>
+        <item>lb</item>
+    </string-array>
+
+    <string-array name="pressure_units">
+        <item>Pa</item>
+        <item>kPa</item>
+        <item>atm</item>
+        <item>cmHg</item>
+        <item>mmHg</item>
+        <item>lb/in^2</item>
+        <item>lb/ft^2</item>
+    </string-array>
+
+    <string-array name="area">
+        <item>mm^2</item>
+        <item>cm^2</item>
+        <item>m^2</item>
+        <item>km^2</item>
+        <item>in^2</item>
+        <item>ft^2</item>
+        <item>yd^2</item>
+        <item>mi^2</item>
+        <item>a</item>
+        <item>ac</item>
+        <item>ha</item>
+    </string-array>
+
+    <string-array name="volume">
+        <item>mm^3</item>
+        <item>cm^3 (cc)</item>
+        <item>m^3</item>
+        <item>km^3</item>
+        <item>in^3</item>
+        <item>ft^3</item>
+        <item>yd^3</item>
+        <item>mi^3</item>
+        <item>L</item>
+        <item>gal</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

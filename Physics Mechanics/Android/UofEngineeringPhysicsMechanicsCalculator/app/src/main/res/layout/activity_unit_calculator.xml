@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".unit_calculator"
+    android:background="@color/primary_color">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            app:cardBackgroundColor="@color/card_color"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/din_condensed_bold"
+                android:text="@string/unit_calc_title"
+                android:textAlignment="center"
+                android:textColor="@color/text_color"
+                android:textSize="30sp"></TextView>
+
+        </androidx.cardview.widget.CardView>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/units_length"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    app:cardElevation="10dp"
+                    app:cardBackgroundColor="@color/primary_color"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/length_btn_icon"
+                            android:layout_width="40dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/ic_baseline_straighten_24"
+                            app:tint="@color/card_color">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/length_btn_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/unit_length"
+                            android:textColor="@color/card_color"
+                            android:fontFamily="@font/cairo_bold"
+                            android:textSize="20sp"
+                            android:textAlignment="center">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/units_mass"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    app:cardElevation="10dp"
+                    app:cardBackgroundColor="@color/primary_color"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/mass_btn_icon"
+                            android:layout_width="40dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/ic_scale"
+                            app:tint="@color/card_color">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/mass_btn_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/unit_mass"
+                            android:textColor="@color/card_color"
+                            android:fontFamily="@font/cairo_bold"
+                            android:textSize="20sp"
+                            android:textAlignment="center">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/units_time"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    app:cardElevation="10dp"
+                    app:cardBackgroundColor="@color/primary_color"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/time_btn_icon"
+                            android:layout_width="40dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/ic_outline_access_time_24"
+                            app:tint="@color/card_color">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/time_btn_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/unit_time"
+                            android:textColor="@color/card_color"
+                            android:fontFamily="@font/cairo_bold"
+                            android:textSize="20sp"
+                            android:textAlignment="center">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/units_speed"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    app:cardElevation="10dp"
+                    app:cardBackgroundColor="@color/primary_color"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/speed_btn_icon"
+                            android:layout_width="40dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/ic_baseline_speed_24"
+                            app:tint="@color/card_color">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/speed_btn_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/unit_speed"
+                            android:textColor="@color/card_color"
+                            android:fontFamily="@font/cairo_bold"
+                            android:textSize="20sp"
+                            android:textAlignment="center">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/units_energy"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    app:cardElevation="10dp"
+                    app:cardBackgroundColor="@color/primary_color"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/energy_btn_icon"
+                            android:layout_width="40dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/ic_baseline_local_fire_department_24"
+                            app:tint="@color/card_color">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/energy_btn_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/unit_energy"
+                            android:textColor="@color/card_color"
+                            android:fontFamily="@font/cairo_bold"
+                            android:textSize="20sp"
+                            android:textAlignment="center">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/units_force"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    app:cardElevation="10dp"
+                    app:cardBackgroundColor="@color/primary_color"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/force_btn_icon"
+                            android:layout_width="40dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/ic_baseline_close_fullscreen_24"
+                            app:tint="@color/card_color">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/force_btn_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/unit_force"
+                            android:textColor="@color/card_color"
+                            android:fontFamily="@font/cairo_bold"
+                            android:textSize="20sp"
+                            android:textAlignment="center">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/units_pressure"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    app:cardElevation="10dp"
+                    app:cardBackgroundColor="@color/primary_color"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/pressure_btn_icon"
+                            android:layout_width="40dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/ic_compress"
+                            app:tint="@color/card_color">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/pressure_btn_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/unit_pressure"
+                            android:textColor="@color/card_color"
+                            android:fontFamily="@font/cairo_bold"
+                            android:textSize="20sp"
+                            android:textAlignment="center">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/units_area"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    app:cardElevation="10dp"
+                    app:cardBackgroundColor="@color/primary_color"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/area_btn_icon"
+                            android:layout_width="40dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/ic_baseline_branding_watermark_24"
+                            app:tint="@color/card_color">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/area_btn_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/unit_area"
+                            android:textColor="@color/card_color"
+                            android:fontFamily="@font/cairo_bold"
+                            android:textSize="20sp"
+                            android:textAlignment="center">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/units_volume"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    app:cardElevation="10dp"
+                    app:cardBackgroundColor="@color/primary_color"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/volume_btn_icon"
+                            android:layout_width="40dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/ic_view_in_ar"
+                            app:tint="@color/card_color">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/volume_btn_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="@string/unit_volume"
+                            android:textColor="@color/card_color"
+                            android:fontFamily="@font/cairo_bold"
+                            android:textSize="20sp"
+                            android:textAlignment="center">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <FrameLayout
+            android:id="@+id/units_frame"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            >
+
+        </FrameLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/units_return_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            app:cardBackgroundColor="@color/card_color"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                app:tint="@color/primary_color"
+                ></ImageView>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
