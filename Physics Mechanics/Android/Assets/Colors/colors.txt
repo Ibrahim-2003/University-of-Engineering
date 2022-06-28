@@ -1,4 +1,21 @@
-light_blue_ice: dff6ff
-primary_blue: 1363df
-dark_navy_blue: 06283d
-frost_blue: 47b5ff
+PRIMARY COLORS
+----------------------------
+big_brain_blue: #1461DF
+innovation_red: #FC3D21
+curiosity_white: #EEEEEE
+machine_grey: #484440
+
+OTHER COLORS
+----------------------------
+nebular_navy: #1A1A2D
+engineering_blue: #18367E
+electric_blue: #66B4F9
+risky_red: #C83024
+prototype_purple: #7018BA
+high_tech_pink: #E763B2
+frozen_blue: #E3F5FE
+experimental_indigo: #200273
+eureka_red: #7F1B18
+modern_black: #1D1D1D
+sleek_silver: #C0C0C0
+lunar_grey: #515B65
