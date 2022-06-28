@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'Product Sans';
+    font-weight: normal;
+    font-style: normal;
+    src: url('SourceSansPro-Regular.ttf');
+}
+
+:root {
+    --primary_key: #1461DF;
+    --secondary_key: #1A1A2D;
+    --tertiary_key: #484440;
+}
+
+body {
+    font-family: 'Product Sans';
+    background-color: #EEEEEE;
+}
+
+#grid_container {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+}
+
+#main_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.color_box {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 15px;
+    font-family: 'Product Sans';
+    font-size: 12pt;
+    height: 10vh;
+    width: 15vw;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px;
+}
+
+.dark_text {
+    color: #000000;
+    opacity: 1;
+}
+
+.light_text {
+    color: #EEEEEE;
+    opacity: 1;
+}
+
+#primary {
+    background-color: var(--primary_key);
+    opacity: 0.6;
+}
+
+#on_primary {
+    background-color: var(--primary_key);
+    opacity: 0;
+}
+
+#primary_container {
+    background-color: var(--primary_key);
+    opacity: 0.1;
+}
+
+#on_primary_container {
+    background-color: var(--primary_key);
+    opacity: 0.9;
+}
+
+#secondary {
+    background-color: var(--secondary_key);
+    opacity: 0.6;
+}
+
+#on_secondary {
+    background-color: var(--secondary_key);
+    opacity: 0;
+}
+
+#secondary_container {
+    background-color: var(--secondary_key);
+    opacity: 0.1;
+}
+
+#on_secondary_container {
+    background-color: var(--secondary_key);
+    opacity: 0.9;
+}
+
+#tertiary {
+    background-color: var(--tertiary_key);
+    opacity: 0.6;
+}
+
+#on_tertiary {
+    background-color: var(--tertiary_key);
+    opacity: 0;
+}
+
+#tertiary_container {
+    background-color: var(--tertiary_key);
+    opacity: 0.1;
+}
+
+#on_tertiary_container {
+    background-color: var(--tertiary_key);
+    opacity: 0.9;
+}
+
+#error {
+    background-color: #7018BA;
+}
+
+#on_error {
+    background-color: #66B4F9;
+}
+
+#error_container {
+    background-color: #E763B2;
+}
+
+#on_error_container {
+    background-color: #7018BA;
+}
+
+#background {
+    background-color: #EEEEEE;
+}
+
+#on_background {
+    background-color: #1D1D1D;
+}
+
+#surface {
+    background-color: #EEEEEE;
+}
+
+#on_surface {
+    background-color: #1D1D1D;
+}
+
+#outline {
+    column-span: 2;
+    background-color: #515B65;
+}
