@@ -76,37 +76,13 @@ public class unit_calculator extends AppCompatActivity {
 
         for(CardView card : card_list){
             card.setOnClickListener(v -> {
-
-
-                int nightModeFlags =
-                        v.getContext().getResources().getConfiguration().uiMode &
-                                Configuration.UI_MODE_NIGHT_MASK;
-                switch (nightModeFlags) {
-                    case Configuration.UI_MODE_NIGHT_YES:
-                        card.setCardBackgroundColor(ContextCompat.getColor(getApplication(), R.color.card_color));
+                        card.setCardBackgroundColor(getResources().getColor(R.color.card_color));
 
                         for(CardView card_check : card_list){
                             if(!String.format("%d", card_check.getId()).equals(String.format("%d", v.getId()))){
-                                card_check.setCardBackgroundColor(ContextCompat.getColor(getApplication(), R.color.primary_color));
+                                card_check.setCardBackgroundColor(getResources().getColor(R.color.primary_color));
                             }
                         }
-
-                        break;
-
-                    case Configuration.UI_MODE_NIGHT_NO:
-                        card.setCardBackgroundColor(ContextCompat.getColor(getApplication(), R.color.primary_blue));
-
-                        for(CardView card_check : card_list){
-                            if(!String.format("%d", card_check.getId()).equals(String.format("%d", v.getId()))){
-                                card_check.setCardBackgroundColor(ContextCompat.getColor(getApplication(), R.color.curiosity_white));
-                            }
-                        }
-                        break;
-
-                    default:
-                        break;
-
-                }
 
                 int card_id = card.getId();
 
@@ -137,6 +113,7 @@ public class unit_calculator extends AppCompatActivity {
                         break;
                     case R.id.units_area:
                         recolorIconText(area_btn_icon, icon_list, area_btn_text, text_list, v);
+                        replaceFragment(new units_area_fragment());
                         break;
                     case R.id.units_volume:
                         recolorIconText(volume_btn_icon, icon_list, volume_btn_text, text_list, v);
@@ -162,49 +139,20 @@ public class unit_calculator extends AppCompatActivity {
 
     private void recolorIconText(ImageView color_icon, ImageView[] icon_list, TextView color_text, TextView[] text_list, View v){
 
-        int nightModeFlags =
-                v.getContext().getResources().getConfiguration().uiMode &
-                        Configuration.UI_MODE_NIGHT_MASK;
-        switch (nightModeFlags) {
-            case Configuration.UI_MODE_NIGHT_YES:
-                for (ImageView icon:icon_list){
-                    if(icon.getId() != color_icon.getId()){
-                        icon.setColorFilter(ContextCompat.getColor(getApplication(), R.color.card_color));
-                    }else{
-                        icon.setColorFilter(ContextCompat.getColor(getApplication(), R.color.primary_color));
-                    }
-                }
+        for (ImageView icon:icon_list){
+            if(icon.getId() != color_icon.getId()){
+                icon.setColorFilter(getResources().getColor(R.color.card_color));
+            }else{
+                icon.setColorFilter(getResources().getColor(R.color.primary_color));
+            }
+        }
 
-                for (TextView text:text_list){
-                    if (text.getId() != color_text.getId()){
-                        text.setTextColor(ContextCompat.getColor(getApplication(), R.color.card_color));
-                    }else{
-                        text.setTextColor(ContextCompat.getColor(getApplication(), R.color.primary_color));
-                    }
-                }
-                break;
-
-            case Configuration.UI_MODE_NIGHT_NO:
-                for (ImageView icon:icon_list){
-                    if(icon.getId() != color_icon.getId()){
-                        icon.setColorFilter(ContextCompat.getColor(getApplication(), R.color.primary_blue));
-                    }else{
-                        icon.setColorFilter(ContextCompat.getColor(getApplication(), R.color.curiosity_white));
-                    }
-                }
-
-                for (TextView text:text_list){
-                    if (text.getId() != color_text.getId()){
-                        text.setTextColor(ContextCompat.getColor(getApplication(), R.color.primary_blue));
-                    }else{
-                        text.setTextColor(ContextCompat.getColor(getApplication(), R.color.curiosity_white));
-                    }
-                }
-                break;
-
-            default:
-                break;
-
+        for (TextView text:text_list){
+            if (text.getId() != color_text.getId()){
+                text.setTextColor(getResources().getColor(R.color.card_color));
+            }else{
+                text.setTextColor(getResources().getColor(R.color.primary_color));
+            }
         }
     }
 
